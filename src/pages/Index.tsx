@@ -1,15 +1,13 @@
-import Hero from "@/components/Hero";
-import FeaturedPosts from "@/components/FeaturedPosts";
-import Newsletter from "@/components/Newsletter";
-import Footer from "@/components/Footer";
+import Sidebar from "@/components/Sidebar";
+import Feed from "@/components/Feed";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <Hero />
-      <FeaturedPosts />
-      <Newsletter />
-      <Footer />
+    <div className="min-h-screen bg-background">
+      <Sidebar />
+      <div className="ml-20 md:ml-64 max-w-2xl">
+        <Feed />
+      </div>
     </div>
   );
 };
